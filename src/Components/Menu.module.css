@@ -1,0 +1,54 @@
+/* Menu transition on visibility */
+.menu {
+    padding: 10px;
+    height: 100vh;
+    font-weight: bold;
+    
+
+}
+
+/* Menu items styling */
+.menu_items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+/* Individual menu item */
+.item {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    justify-self: flex-start;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+/* Hover effect for menu items */
+.item:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+.item:active{
+    transform: translateY(-5px);
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Start from the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at the original position */
+    }
+}
+

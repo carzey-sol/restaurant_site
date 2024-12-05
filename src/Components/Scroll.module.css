@@ -1,0 +1,16 @@
+
+.hover {
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.hover:hover {
+    transform: translateY(-10px); 
+}
+
+
+.hover:active {
+    transform: translateY(5px); 
+}

@@ -1,0 +1,108 @@
+.hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--primary-color);
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+
+.heroimg{
+    width: 100%;
+    height: 50vh;
+}
+
+
+.heroimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Changed from clip to cover to better fit the container */
+    border-radius: 10px;
+}
+
+.herodesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.smallimgcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.smallimg:hover{
+    opacity: 0.8;
+    transition: opacity ease-in-out 300ms;
+}
+.smallimg {
+    width: 200px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border-radius: 10%;
+    border: 2px solid var(--primary-color);
+}
+
+.smallimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the images inside smallimg containers scale properly */
+}
+.last{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.last button{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: white;
+
+
+}
+
+.last button:hover{
+   opacity: 0.8;
+
+}
+
+.last button:active{
+    opacity: 1.0;
+    box-shadow: 2px 2px black;
+ 
+ }
+
+@media (min-width: 599px){
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .heroimg{
+        width: 100%;
+        height: 75vh;
+    }
+    .herodesc{
+        margin-top: -50px
+    }
+    .herodesc .title{
+        font-size: 50px;
+    }
+    .herodesc h2{
+        font-size: 30px;
+    }
+
+}

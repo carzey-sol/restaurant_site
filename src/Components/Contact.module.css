@@ -1,0 +1,89 @@
+.maindiv {
+    display: flex;
+    flex-direction: column; /* Default for mobile */
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.maindiv h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Occupy full width */
+}
+
+/* Container for the form and image */
+.content {
+    display: flex;
+    flex-direction: column; /* Stack form and image vertically on mobile */
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+}
+
+.form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+.form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* For larger screens (desktop) */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row; /* Arrange form and image side by side */
+        align-items: flex-start; /* Align at the top */
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .form {
+        max-width: 50%; /* Half-width for the form */
+    }
+
+    .image {
+        max-width: 50%; /* Half-width for the image */
+    }
+
+    .image img {
+        border-radius: 20px;
+    }
+}
