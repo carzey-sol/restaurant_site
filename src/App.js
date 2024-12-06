@@ -3,6 +3,8 @@ import Hero from './Components/Hero'
 import Handl from './Components/Handl'
 import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
+import Social from './Components/Social'
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Handl />
       <Contact />
       <Gallery />
+      <Social />
+      <Footer />
     </div>
   );
 }

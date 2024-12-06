@@ -1,0 +1,39 @@
+.social{
+    padding: 20px;
+    background-color: aliceblue;
+}
+.social h1{
+    text-align: center;
+}
+.list{
+   
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+}
+.list span {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.list span a{
+    text-decoration: none;
+    color: black;
+}
+.list span:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+@media (min-width: 599px) {
+    .list span{
+        font-size: 20px;
+    }
+}

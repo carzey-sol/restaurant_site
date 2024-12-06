@@ -1,0 +1,75 @@
+.mainmodule {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px; /* Add space between sections */
+    background-color: #f8f8f8; /* Optional: Light background color */
+    text-align: center;
+}
+
+.namemodule {
+    display: flex;
+    flex-direction: column; /* Stack text and icons vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+.namemodule h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.namemodule p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.footermenu {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center; /* Center-align each item */
+    justify-content: center; /* Center-align vertically */
+    gap: 10px; /* Space between items */
+}
+
+.footermenu span {
+    display: flex;
+    flex-direction: row; /* Icon and text side by side */
+    align-items: center; /* Align icon and text vertically */
+    justify-content: center; /* Center-align icon and text */
+    gap: 10px; /* Space between icon and text */
+    font-size: 16px;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.footermenu span:hover {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+@media (min-width: 599px) {
+    .mainmodule {
+        flex-direction: row; /* Align sections horizontally on larger screens */
+        gap: 50px; /* Space between columns */
+        align-items: flex-start; /* Align items to the top of each column */
+        justify-content: center;
+    }
+
+    .namemodule {
+        text-align: center; /* Ensure text is still centered */
+    }
+
+    .footermenu {
+        align-items: center; /* Center-align menu items */
+        justify-content: center;
+    }
+}
